@@ -16,8 +16,8 @@ from novaml.models import LinearRegression
 
 x = np.array([1.0, 2.0])
 y = np.array([300.0, 500.0])
-w_init = 0
-b_init = 0
+w_init = np.array([0.0])
+b_init = np.array([0.0])
 alpha = 1.0e-2
 iterations = 10000
 lambd = None
