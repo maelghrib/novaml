@@ -1,8 +1,8 @@
 # NovaML
-Build machine learning applications with NovaML, the NEW machine learning library!
+Build machine learning applications with NovaML; The NEW machine learning library!
 
 ## Note
-This library for learning purposes and not ready for production use!
+This library is for learning purposes and not ready for production use!
 
 ## Install
 ```shell
