@@ -585,9 +585,9 @@
 
 
 <h1 id="novaml">NovaML</h1>
-<p>Build machine learning applications with NovaML, the NEW machine learning library!</p>
+<p>Build machine learning applications with NovaML; The NEW machine learning library!</p>
 <h2 id="note">Note</h2>
-<p>This library for learning purposes and not ready for production use!</p>
+<p>This library is for learning purposes and not ready for production use!</p>
 <h2 id="install">Install</h2>
 <pre><code class="language-shell">pip install novaml
 </code></pre>
@@ -597,8 +597,8 @@ from novaml.models import LinearRegression
 
 x = np.array([1.0, 2.0])
 y = np.array([300.0, 500.0])
-w_init = 0
-b_init = 0
+w_init = np.array([0.0])
+b_init = np.array([0.0])
 alpha = 1.0e-2
 iterations = 10000
 lambd = None
