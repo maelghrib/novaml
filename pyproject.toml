@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = [
   { name="Mustafa A. Elghrib", email="maelghrib@gmail.com" },
 ]
-description = "Machine Learning Library"
+description = "Build machine learning applications with NovaML; The NEW machine learning library!"
 readme = "README.md"
 requires-python = ">=3.11"
 classifiers = [
