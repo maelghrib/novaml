@@ -23,10 +23,10 @@ class LogisticRegression:
 
     def _model(
             self,
-            x: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
-    ) -> np.ndarray:
+            x: np.ndarray | float,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
+    ) -> np.ndarray | float:
         """Calculates the sigmoid function.
 
         Args:
@@ -45,10 +45,10 @@ class LogisticRegression:
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
             lambd: float | None = None,
-    ) -> float:
+    ) -> np.ndarray | float:
         """Calculates the cost function.
 
         Args:
@@ -72,10 +72,10 @@ class LogisticRegression:
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
             lambd: float | None = None,
-    ) -> (float, float):
+    ) -> (np.ndarray | float, np.ndarray | float):
         """Calculate the gradient descent derivatives.
 
         Args:
@@ -90,22 +90,22 @@ class LogisticRegression:
         """
         m = x.shape[0]
         fx = self._model(x, w, b)
-        dw = np.sum(np.dot((fx - y), x)) / m
+        dw = np.sum(np.dot((fx.T - y), x)) / m
         if lambd:
             dw += lambd * w / m
-        db = np.sum(fx - y) / m
+        db = np.sum(fx.T - y) / m
         return dw, db
 
     def train(
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w_init: np.ndarray,
-            b_init: np.ndarray,
+            w_init: np.ndarray | float,
+            b_init: np.ndarray | float,
             alpha: float,
             iterations: int,
             lambd: float | None = None,
-    ) -> (np.ndarray, np.ndarray, list, list):
+    ) -> (np.ndarray | float, np.ndarray | float, list, list):
         """Train the model to calculate the final weight and bias.
 
         Args:
@@ -139,10 +139,10 @@ class LogisticRegression:
 
     def predict(
             self,
-            x: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
-    ) -> np.ndarray:
+            x: np.ndarray | float,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
+    ) -> np.ndarray | float:
         """Predict the new Yhat given the X and final weight and bias.
 
         Args:
