@@ -10,8 +10,8 @@ logistic_regression = LogisticRegression()
 final_w, final_b, _, _ = logistic_regression.train(
     x=x_train,
     y=y_train,
-    w_init=np.array([0]),
-    b_init=np.array([0]),
+    w_init=0,
+    b_init=0,
     alpha=0.01,
     iterations=1000,
     lambd=0,
@@ -19,5 +19,5 @@ final_w, final_b, _, _ = logistic_regression.train(
 
 yhat = logistic_regression.predict(x=x_train, w=final_w, b=final_b)
 
-print(f"yhat: {yhat}")
-print(f"ytrain: {y_train}")
+print(f"yhat: {yhat[:5]}")
+print(f"ytrain: {y_train[:5]}")
