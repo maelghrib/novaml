@@ -4,6 +4,9 @@ Build machine learning applications with NovaML; The NEW machine learning librar
 ## Note
 This library is for learning purposes and not ready for production use!
 
+## Docs
+Check the [documentation](https://maelghrib.github.io/novaml/) website
+
 ## Install
 ```shell
 pip install novaml
@@ -16,8 +19,8 @@ from novaml.models import LinearRegression
 
 x = np.array([1.0, 2.0])
 y = np.array([300.0, 500.0])
-w_init = np.array([0.0])
-b_init = np.array([0.0])
+w_init = 0
+b_init = 0
 alpha = 1.0e-2
 iterations = 10000
 lambd = None
