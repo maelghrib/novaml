@@ -7,7 +7,7 @@ data = np.loadtxt("data/houses.txt", delimiter=',')
 
 x_train, y_train = data[:, :4], data[:, 4]
 x_train = z_score_normalization(x_train)
-initial_w, initial_b = np.zeros(x_train.shape[1]), np.array([0.0])
+initial_w, initial_b = np.zeros(x_train.shape[1]), 0
 
 linear_regression = LinearRegression()
 
@@ -23,5 +23,5 @@ final_w, final_b, _, _ = linear_regression.train(
 
 yhat = linear_regression.predict(x=x_train, w=final_w, b=final_b)
 
-print(f"yhat: {yhat}")
-print(f"ytrain: {y_train}")
+print(f"yhat: {yhat[:5]}")
+print(f"ytrain: {y_train[:5]}")
