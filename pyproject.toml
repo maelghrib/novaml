@@ -15,6 +15,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/maelghrib/novaml"
+Documentation = "https://maelghrib.github.io/novaml"
 Issues = "https://github.com/maelghrib/novaml/issues"
 
 [build-system]
