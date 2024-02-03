@@ -19,6 +19,25 @@ class LinearRegression:
            predict: Public method to predict Y based on X and the wights and biases.
     """
 
+    def _model(
+            self,
+            x: np.ndarray,
+            w: np.ndarray,
+            b: np.ndarray,
+    ) -> np.ndarray:
+        """Calculates the linear model.
+
+        Args:
+            x: The x train data.
+            w: The weight.
+            b: The bias.
+
+        Returns:
+            The value of f(x).
+        """
+        fx = np.dot(x, w) + b
+        return fx
+
     def _cost(
             self,
             x: np.ndarray,
@@ -32,15 +51,15 @@ class LinearRegression:
         Args:
             x: The x train data.
             y: The y train data.
-            w: The initial weight.
-            b: The initial bias.
+            w: The weight.
+            b: The bias.
             lambd: The regularization term.
 
         Returns:
             The cost function.
         """
         m = x.shape[0]
-        fx = np.dot(x, w) + b
+        fx = self._model(x, w, b)
         jwb = np.sum(np.square(fx - y)) / (2 * m)
         if lambd:
             jwb += lambd * np.sum(w ** 2) / (2 * m)
@@ -59,15 +78,15 @@ class LinearRegression:
         Args:
             x: The x train data.
             y: The y train data.
-            w: The initial weight.
-            b: The initial bias.
+            w: The weight.
+            b: The bias.
             lambd: The regularization term.
 
         Returns:
             The weight derivative and the bias derivative.
         """
         m = x.shape[0]
-        fx = np.dot(x, w) + b
+        fx = self._model(x, w, b)
         dw = np.sum(np.dot((fx - y), x)) / m
         if lambd:
             dw += lambd * w / m
@@ -121,7 +140,7 @@ class LinearRegression:
             w: np.ndarray,
             b: np.ndarray,
     ) -> np.ndarray:
-        """Train the model to calculate the final weight and bias.
+        """Predict the new Yhat given the X and final weight and bias.
 
         Args:
             x: The x train data.
@@ -131,4 +150,5 @@ class LinearRegression:
         Returns:
             The predicted yhat.
         """
-        return np.dot(x, w) + b
+        yhat = self._model(x, w, b)
+        return yhat
