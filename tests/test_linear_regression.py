@@ -11,8 +11,8 @@ def linear_regression():
 def test_cost(linear_regression):
     x = np.array([1.0, 2.0])
     y = np.array([300.0, 500.0])
-    w = np.array([0, 0])
-    b = np.array([0])
+    w = 0
+    b = 0
     lambd = None
 
     cost = linear_regression._cost(x, y, w, b, lambd)
@@ -23,8 +23,8 @@ def test_cost(linear_regression):
 def test_gradient_descent(linear_regression):
     x = np.array([1.0, 2.0])
     y = np.array([300.0, 500.0])
-    w = np.array([0, 0])
-    b = np.array([0])
+    w = 0
+    b = 0
     lambd = None
 
     dw, db = linear_regression._gradient_descent(x, y, w, b, lambd)
@@ -36,8 +36,8 @@ def test_gradient_descent(linear_regression):
 def test_train(linear_regression):
     x = np.array([1.0, 2.0])
     y = np.array([300.0, 500.0])
-    w_init = np.array([0])
-    b_init = np.array([0])
+    w_init = 0
+    b_init = 0
     alpha = 1.0e-2
     iterations = 10000
     lambd = None
@@ -51,9 +51,9 @@ def test_train(linear_regression):
 
 
 def test_predict(linear_regression):
-    x = np.array([1])
-    w = np.array([200])
-    b = np.array([100])
+    x = 1
+    w = 200
+    b = 100
 
     prediction = linear_regression.predict(x, w, b)
 

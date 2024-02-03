@@ -22,9 +22,9 @@ class LinearRegression:
     def _model(
             self,
             x: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
-    ) -> np.ndarray:
+            w: np.ndarray | float,
+            b: np.ndarray | float,
+    ) -> np.ndarray | float:
         """Calculates the linear model.
 
         Args:
@@ -42,10 +42,10 @@ class LinearRegression:
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
             lambd=None,
-    ) -> float:
+    ) -> np.ndarray | float:
         """Calculate the cost function.
 
         Args:
@@ -69,10 +69,10 @@ class LinearRegression:
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
             lambd=None,
-    ) -> (float, float):
+    ) -> (np.ndarray | float, np.ndarray | float):
         """Calculate the gradient descent derivatives.
 
         Args:
@@ -97,12 +97,12 @@ class LinearRegression:
             self,
             x: np.ndarray,
             y: np.ndarray,
-            w_init: np.ndarray,
-            b_init: np.ndarray,
+            w_init: np.ndarray | float,
+            b_init: np.ndarray | float,
             alpha: float,
             iterations: int,
             lambd: float | None = None,
-    ) -> (np.ndarray, np.ndarray, list, list):
+    ) -> (np.ndarray | float, np.ndarray | float, list, list):
         """Train the model to calculate the final weight and bias.
 
         Args:
@@ -136,10 +136,10 @@ class LinearRegression:
 
     def predict(
             self,
-            x: np.ndarray,
-            w: np.ndarray,
-            b: np.ndarray,
-    ) -> np.ndarray:
+            x: np.ndarray | float,
+            w: np.ndarray | float,
+            b: np.ndarray | float,
+    ) -> np.ndarray | float:
         """Predict the new Yhat given the X and final weight and bias.
 
         Args:
