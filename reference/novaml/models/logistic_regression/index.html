@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../linear_regression/">
       
       
-        <link rel="next" href="../logistic_regression/">
+        <link rel="next" href="../../utils/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>linear_regression - NovaML Docs</title>
+        <title>logistic_regression - NovaML Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#novaml.models.linear_regression" class="md-skip">
+        <a href="#novaml.models.logistic_regression" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              linear_regression
+              logistic_regression
             
           </span>
         </div>
@@ -343,6 +343,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../linear_regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    linear_regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -357,7 +378,7 @@
           
   
   <span class="md-ellipsis">
-    linear_regression
+    logistic_regression
   </span>
   
 
@@ -368,7 +389,7 @@
         
   
   <span class="md-ellipsis">
-    linear_regression
+    logistic_regression
   </span>
   
 
@@ -388,26 +409,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression" class="md-nav__link">
     <span class="md-ellipsis">
-      linear_regression
+      logistic_regression
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression" class="md-nav__link">
     <span class="md-ellipsis">
-      LinearRegression
+      LogisticRegression
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="LinearRegression">
+    <nav class="md-nav" aria-label="LogisticRegression">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression.predict" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression.predict" class="md-nav__link">
     <span class="md-ellipsis">
       predict
     </span>
@@ -416,7 +437,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression.train" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression.train" class="md-nav__link">
     <span class="md-ellipsis">
       train
     </span>
@@ -433,27 +454,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../logistic_regression/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    logistic_regression
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -581,26 +581,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression" class="md-nav__link">
     <span class="md-ellipsis">
-      linear_regression
+      logistic_regression
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression" class="md-nav__link">
     <span class="md-ellipsis">
-      LinearRegression
+      LogisticRegression
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="LinearRegression">
+    <nav class="md-nav" aria-label="LogisticRegression">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression.predict" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression.predict" class="md-nav__link">
     <span class="md-ellipsis">
       predict
     </span>
@@ -609,7 +609,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#novaml.models.linear_regression.LinearRegression.train" class="md-nav__link">
+  <a href="#novaml.models.logistic_regression.LogisticRegression.train" class="md-nav__link">
     <span class="md-ellipsis">
       train
     </span>
@@ -637,16 +637,16 @@
                   
 
 
-  <h1>linear_regression</h1>
+  <h1>logistic_regression</h1>
 
 <div class="doc doc-object doc-module">
 
 
 
-<a id="novaml.models.linear_regression"></a>
+<a id="novaml.models.logistic_regression"></a>
   <div class="doc doc-contents first">
   
-      <p>A module that contains linear regression model.</p>
+      <p>A module that contains logistic regression model.</p>
 
 
 
@@ -660,10 +660,10 @@
     </thead>
     <tbody>
         <tr>
-          <td><code><a class="autorefs autorefs-internal" title="novaml.models.linear_regression.LinearRegression" href="#novaml.models.linear_regression.LinearRegression">LinearRegression</a></code></td>
+          <td><code><a class="autorefs autorefs-internal" title="novaml.models.logistic_regression.LogisticRegression" href="#novaml.models.logistic_regression.LogisticRegression">LogisticRegression</a></code></td>
           <td>
             <div class="doc-md-description">
-              <p>A class that hold the linear regression functions.</p>
+              <p>A class that hold the logistic regression functions.</p>
             </div>
           </td>
         </tr>
@@ -685,8 +685,8 @@
 
 
 
-<h2 id="novaml.models.linear_regression.LinearRegression" class="doc doc-heading">
-          <code>LinearRegression</code>
+<h2 id="novaml.models.logistic_regression.LogisticRegression" class="doc doc-heading">
+          <code>LogisticRegression</code>
 
 
 </h2>
@@ -695,7 +695,7 @@
   <div class="doc doc-contents ">
 
   
-      <p>The linear regression model for training and predicting linear models.</p>
+      <p>The logistic regression model for classification.</p>
 
 
 
@@ -709,7 +709,7 @@
     </thead>
     <tbody>
           <tr>
-            <td><code><span title="novaml.models.linear_regression.LinearRegression._model">_model</span></code></td>
+            <td><code><span title="novaml.models.logistic_regression.LogisticRegression._model">_model</span></code></td>
             <td>
               <div class="doc-md-description">
                 <p>Private method to calculate the model.</p>
@@ -717,7 +717,7 @@
             </td>
           </tr>
           <tr>
-            <td><code><span title="novaml.models.linear_regression.LinearRegression._cost">_cost</span></code></td>
+            <td><code><span title="novaml.models.logistic_regression.LogisticRegression._cost">_cost</span></code></td>
             <td>
               <div class="doc-md-description">
                 <p>Private method to calculate the cost function.</p>
@@ -725,7 +725,7 @@
             </td>
           </tr>
           <tr>
-            <td><code><span title="novaml.models.linear_regression.LinearRegression._gradient_descent">_gradient_descent</span></code></td>
+            <td><code><span title="novaml.models.logistic_regression.LogisticRegression._gradient_descent">_gradient_descent</span></code></td>
             <td>
               <div class="doc-md-description">
                 <p>Private method to calculate the gradient decent.</p>
@@ -733,7 +733,7 @@
             </td>
           </tr>
           <tr>
-            <td><code><a class="autorefs autorefs-internal" title="novaml.models.linear_regression.LinearRegression.train" href="#novaml.models.linear_regression.LinearRegression.train">train</a></code></td>
+            <td><code><a class="autorefs autorefs-internal" title="novaml.models.logistic_regression.LogisticRegression.train" href="#novaml.models.logistic_regression.LogisticRegression.train">train</a></code></td>
             <td>
               <div class="doc-md-description">
                 <p>Public method to train X and Y to get the wights and biases.</p>
@@ -741,7 +741,7 @@
             </td>
           </tr>
           <tr>
-            <td><code><a class="autorefs autorefs-internal" title="novaml.models.linear_regression.LinearRegression.predict" href="#novaml.models.linear_regression.LinearRegression.predict">predict</a></code></td>
+            <td><code><a class="autorefs autorefs-internal" title="novaml.models.logistic_regression.LogisticRegression.predict" href="#novaml.models.logistic_regression.LogisticRegression.predict">predict</a></code></td>
             <td>
               <div class="doc-md-description">
                 <p>Public method to predict Y based on X and the wights and biases.</p>
@@ -752,10 +752,8 @@
   </table>
 
             <details class="quote">
-              <summary>Source code in <code>novaml/models/linear_regression.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 12</span>
-<span class="normal"> 13</span>
-<span class="normal"> 14</span>
+              <summary>Source code in <code>novaml/models/logistic_regression.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 14</span>
 <span class="normal"> 15</span>
 <span class="normal"> 16</span>
 <span class="normal"> 17</span>
@@ -896,8 +894,11 @@
 <span class="normal">152</span>
 <span class="normal">153</span>
 <span class="normal">154</span>
-<span class="normal">155</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">LinearRegression</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The linear regression model for training and predicting linear models.</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">LogisticRegression</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;The logistic regression model for classification.</span>
 
 <span class="sd">       Methods:</span>
 <span class="sd">           _model: Private method to calculate the model.</span>
@@ -909,21 +910,22 @@
 
     <span class="k">def</span> <span class="nf">_model</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span>
-            <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
+            <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
             <span class="n">w</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
             <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculates the linear model.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculates the sigmoid function.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            x: The x train data.</span>
-<span class="sd">            w: The weight.</span>
-<span class="sd">            b: The bias.</span>
+<span class="sd">            x: The x train data</span>
+<span class="sd">            w: The weight</span>
+<span class="sd">            b: The bias</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            The value of f(x).</span>
+<span class="sd">            The value of f(x)</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">fx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">fx</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">z</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">fx</span>
 
     <span class="k">def</span> <span class="nf">_cost</span><span class="p">(</span>
@@ -932,25 +934,25 @@
             <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
             <span class="n">w</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
             <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
-            <span class="n">lambd</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">lambd</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculate the cost function.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculates the cost function.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            x: The x train data.</span>
-<span class="sd">            y: The y train data.</span>
-<span class="sd">            w: The weight.</span>
-<span class="sd">            b: The bias.</span>
-<span class="sd">            lambd: The regularization term.</span>
+<span class="sd">            x: The x train data</span>
+<span class="sd">            y: The y train data</span>
+<span class="sd">            w: The weight</span>
+<span class="sd">            b: The bias</span>
+<span class="sd">            lambd: The regularization term</span>
 
 <span class="sd">        Returns:</span>
 <span class="sd">            The cost function.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">m</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">fx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-        <span class="n">jwb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">fx</span> <span class="o">-</span> <span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span>
+        <span class="n">jwb</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fx</span><span class="p">))</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">y</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">fx</span><span class="p">)))</span> <span class="o">/</span> <span class="n">m</span>
         <span class="k">if</span> <span class="n">lambd</span><span class="p">:</span>
-            <span class="n">jwb</span> <span class="o">+=</span> <span class="n">lambd</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">w</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span>
+            <span class="n">jwb</span> <span class="o">+=</span> <span class="n">lambd</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">w</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">jwb</span>
 
     <span class="k">def</span> <span class="nf">_gradient_descent</span><span class="p">(</span>
@@ -959,26 +961,26 @@
             <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
             <span class="n">w</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
             <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
-            <span class="n">lambd</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">lambd</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculate the gradient descent derivatives.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            x: The x train data.</span>
-<span class="sd">            y: The y train data.</span>
-<span class="sd">            w: The weight.</span>
-<span class="sd">            b: The bias.</span>
-<span class="sd">            lambd: The regularization term.</span>
+<span class="sd">            x: The x train data</span>
+<span class="sd">            y: The y train data</span>
+<span class="sd">            w: The weight</span>
+<span class="sd">            b: The bias</span>
+<span class="sd">            lambd: The regularization term</span>
 
 <span class="sd">        Returns:</span>
 <span class="sd">            The weight derivative and the bias derivative.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">m</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">fx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-        <span class="n">dw</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">((</span><span class="n">fx</span> <span class="o">-</span> <span class="n">y</span><span class="p">),</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">m</span>
+        <span class="n">dw</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">((</span><span class="n">fx</span><span class="o">.</span><span class="n">T</span> <span class="o">-</span> <span class="n">y</span><span class="p">),</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">m</span>
         <span class="k">if</span> <span class="n">lambd</span><span class="p">:</span>
             <span class="n">dw</span> <span class="o">+=</span> <span class="n">lambd</span> <span class="o">*</span> <span class="n">w</span> <span class="o">/</span> <span class="n">m</span>
-        <span class="n">db</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fx</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">m</span>
+        <span class="n">db</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fx</span><span class="o">.</span><span class="n">T</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">m</span>
         <span class="k">return</span> <span class="n">dw</span><span class="p">,</span> <span class="n">db</span>
 
     <span class="k">def</span> <span class="nf">train</span><span class="p">(</span>
@@ -1060,7 +1062,7 @@
 
 
 
-<h3 id="novaml.models.linear_regression.LinearRegression.predict" class="doc doc-heading">
+<h3 id="novaml.models.logistic_regression.LogisticRegression.predict" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 </h3>
@@ -1153,11 +1155,8 @@
   </table>
 
           <details class="quote">
-            <summary>Source code in <code>novaml/models/linear_regression.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
-<span class="normal">139</span>
-<span class="normal">140</span>
-<span class="normal">141</span>
+            <summary>Source code in <code>novaml/models/logistic_regression.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">141</span>
 <span class="normal">142</span>
 <span class="normal">143</span>
 <span class="normal">144</span>
@@ -1171,7 +1170,10 @@
 <span class="normal">152</span>
 <span class="normal">153</span>
 <span class="normal">154</span>
-<span class="normal">155</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
         <span class="n">w</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
@@ -1200,7 +1202,7 @@
 
 
 
-<h3 id="novaml.models.linear_regression.LinearRegression.train" class="doc doc-heading">
+<h3 id="novaml.models.logistic_regression.LogisticRegression.train" class="doc doc-heading">
           <code class="highlight language-python"><span class="n">train</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w_init</span><span class="p">,</span> <span class="n">b_init</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">iterations</span><span class="p">,</span> <span class="n">lambd</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 </h3>
@@ -1349,11 +1351,8 @@
   </table>
 
           <details class="quote">
-            <summary>Source code in <code>novaml/models/linear_regression.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
+            <summary>Source code in <code>novaml/models/logistic_regression.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">100</span>
 <span class="normal">101</span>
 <span class="normal">102</span>
 <span class="normal">103</span>
@@ -1389,7 +1388,10 @@
 <span class="normal">133</span>
 <span class="normal">134</span>
 <span class="normal">135</span>
-<span class="normal">136</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">train</span><span class="p">(</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">train</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
         <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>

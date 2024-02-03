@@ -246,6 +246,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
       Install
@@ -258,6 +267,24 @@
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
     </span>
   </a>
   
@@ -419,6 +446,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/novaml/models/logistic_regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    logistic_regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -552,6 +600,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
       Install
@@ -564,6 +621,24 @@
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
     </span>
   </a>
   
@@ -588,6 +663,8 @@
 <p>Build machine learning applications with NovaML; The NEW machine learning library!</p>
 <h2 id="note">Note</h2>
 <p>This library is for learning purposes and not ready for production use!</p>
+<h2 id="code">Code</h2>
+<p>Check the <a href="https://github.com/maelghrib/novaml">code repository</a> on GitHub</p>
 <h2 id="install">Install</h2>
 <pre><code class="language-shell">pip install novaml
 </code></pre>
@@ -597,8 +674,8 @@ from novaml.models import LinearRegression
 
 x = np.array([1.0, 2.0])
 y = np.array([300.0, 500.0])
-w_init = np.array([0.0])
-b_init = np.array([0.0])
+w_init = 0
+b_init = 0
 alpha = 1.0e-2
 iterations = 10000
 lambd = None
@@ -614,6 +691,10 @@ yhat = linear_regression.predict(x, final_w, final_b)
 print(f&quot;ytrain: {y}&quot;)
 print(f&quot;yhat: {yhat}&quot;)
 </code></pre>
+<h2 id="examples">Examples</h2>
+<p>Check the <a href="https://github.com/maelghrib/novaml/blob/main/examples%2FREADME.md">README.md</a> of examples folder.</p>
+<h2 id="license">License</h2>
+<p><a href="https://github.com/maelghrib/novaml/blob/main/LICENSE">MIT License</a></p>
 
 
 
