@@ -13,6 +13,7 @@ class LinearRegression:
     """The linear regression model for training and predicting linear models.
 
        Methods:
+           _model: Private method to calculate the model.
            _cost: Private method to calculate the cost function.
            _gradient_descent: Private method to calculate the gradient decent.
            train: Public method to train X and Y to get the wights and biases.
